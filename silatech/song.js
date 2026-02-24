@@ -107,7 +107,7 @@ cmd({
         if (!audioUrl) {
             try {
                 const apiUrl3 = `https://api.siputzx.my.id/api/downloader/ytmp3?url=${encodeURIComponent(video.url)}`;
-                const res3 = = await axios.get(apiUrl3, { timeout: 30000 });
+                const res3 = await axios.get(apiUrl3, { timeout: 30000 });
                 
                 if (res3.data?.result?.url) {
                     audioUrl = res3.data.result.url;
